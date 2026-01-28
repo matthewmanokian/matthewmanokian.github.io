@@ -1,31 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <title>Matthew Manokian</title>
+
+  <!-- Bootstrap CSS first -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS after Bootstrap -->
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Matthew Manokian</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <img src="images/house.jpg" alt="Homepage image">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-  <h1>Matthew Manokian</h1>
+<main role="main" class="container-fluid" style="padding-top: 80px;">
 
+  <div class="container home_2col">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/house.jpg" class="rounded img-fluid d-block" alt="Homepage image">
+      </div>
+      <div class="col-md-6">
+        <h1>Matthew Manokian: WEBD-225</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- REQUIRED: remove the first paragraph entirely (deleted) -->
+
+  <!-- REQUIRED: replace lorem ipsum in the second paragraph with your intro copy -->
   <p>
     Hi, my name is Matthew. I’m a student learning web development and GitHub.
-    This site is part of my coursework where I practice HTML, CSS, and
-    version control.
+    This site is part of my coursework where I practice HTML, CSS, and version control.
   </p>
 
+  <!-- REQUIRED: add an article with an H2 titled Week 2 and a paragraph -->
   <article>
     <h2>Week 2</h2>
     <p>
-      In Week 2, I learned how to create branches in GitHub, make changes
-      without affecting the main branch, and submit pull requests for review.
-      I also learned how important clear commit messages are when collaborating
-      on projects.
+      In Week 2, I learned how to create branches in GitHub, make changes without affecting the main branch,
+      and submit pull requests for review. I also learned how important clear commit messages are when collaborating on projects.
     </p>
   </article>
 
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
