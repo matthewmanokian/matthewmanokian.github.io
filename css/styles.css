@@ -43,3 +43,31 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1.45fr 1.45fr;
+  grid-template-rows: 140px 70px 70px 70px;
+  grid-template-areas:
+    "one one one"
+    "two three three"
+    "two four five"
+    "six six six";
+  gap: 12px;
+
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.wrapper > div {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.box1 { grid-area: one; background: #9b3a3a; }
+.box2 { grid-area: two; background: #f2e2a6; }
+.box3 { grid-area: three; background: #a9c8a4; }
+.box4 { grid-area: four; background: #bfe2fb; }
+.box5 { grid-area: five; background: #3e45ff; color: #000; }
+.box6 { grid-area: six; background: #ff67d6; }
